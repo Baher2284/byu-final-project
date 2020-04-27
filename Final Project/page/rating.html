@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/user.css">
+    <title>Cepetan Rating</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a class="navbar-brand" href="main.html">CEPETAN Express</a>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo03">  
+          <div>
+            <a ><button type="button" class="btn btn-outline-danger btn-sm" onclick="cancelRating()">Cancel</button></a>
+          </div>  
+        </div>         
+  </nav>
+  
+  <div style="background: url(../img/7.jpg)" class="page-holder bg-cover">
+    <div class="container">
+        <div class="header">
+          <h3 class="text-center font-weight-bold">Rating Produk</h3>
+        </div>
+         <div class="form-group col-lg-12 mt-4">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-danger">
+                <input type="radio" id="btn1" class="radioBtn" name="options" autocomplete="off" value="Kecewa Berat"> KECEWA BERAT
+              </label>
+              <label class="btn btn-outline-warning">
+                <input type="radio" id="btn2" class="radioBtn" name="options" autocomplete="off" value="Kecewa Aja">KECEWA AJA
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" id="btn3" class="radioBtn" name="options" autocomplete="off" value="Biasa Aja">BIASA AJA
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" id="btn4" class="radioBtn" name="options" autocomplete="off" value="Puas Aja"> PUAS AJA
+              </label>
+              <label class="btn btn-outline-success">
+                <input type="radio" id="btn5" class="radioBtn" name="options" autocomplete="off" value="Puas Banget"> PUAS BANGET
+          </div>
+        </div>    
+
+        <div class="form-group col-lg-12 ">
+          <textarea class="form-control" id="komentar" rows="5" placeholder="Komentar anda disini"></textarea>
+          <button type="button" id="oke" class="btn btn-primary mt-3" onclick="submitComrate()">KIRIM</button>
+        </div> 
+    </div> 
+  </div>
+
+  <!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+  <div class="container-fluid text-center text-md-left footer">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <h4 class="font-weight-bold thead1">CEPETAN Express</h4>
+        <p class="footerText"><span class="font-weight-bold">GEDUNG PUTIH </span><br>
+          1600 Pennsylvania Ave NW,<br>
+          Washington DC, 20500 <br>
+          TANGERANG SELATAN</p>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-6 mb-md-0 mb-3">
+        <h5 class="font-weight-bold thead2 miring">Get Connected With Us!</h5>
+          <div class="mb-5 flex-center social">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="text-center py-3 footerEnd">© 2020 Copyright :
+    <a href="main.html"><button type="button" class="btn btn-outline-info btn-sm mr-2">cepetanpress.com</button></a>
+  </div>
+</footer>
+
+
+ 
+  
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/rating.js"></script>
+</body>
+</html>

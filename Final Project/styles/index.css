@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+.landing-text {
+    position: absolute;
+    top: 12%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.landingheading1 {
+    font-size: 70px;
+    text-transform: capitalize;
+}
+
+.landingpage2 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+
+.top-heading p {
+    width : 100%;
+    text-align: center;
+    color: #787878;
+    font-size: 70px;
+    text-transform: capitalize;
+}
+.txtspan {
+    color: #3bfeb8;
+}
+.page-holder {
+    min-height: 105vh;
+  }
+  
+.bg-cover {
+    background-size: cover !important;
+}
+.inBtn {
+    padding: 3px 10px;
+}
+
+
+
+
+
